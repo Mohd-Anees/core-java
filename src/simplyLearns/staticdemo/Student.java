@@ -1,0 +1,50 @@
+package simplyLearns.staticdemo;
+
+public class Student {
+	String name;
+	int age;
+	String address;
+	static String college="XYZ";
+	static int count;
+	int fees;
+	
+	static {
+		System.out.println("============Static block===========");
+	}
+	
+	
+	public Student(String name, int age, String address,int count) {
+		this.name = name;
+		this.age = age;
+		this.address = address;
+		this.count=count;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	public static String getCollege() {
+		return college;
+	}
+	
+	static int getIncrement() {
+		return count++;
+		
+	}
+	
+
+}
